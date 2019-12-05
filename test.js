@@ -15,7 +15,7 @@ var t2=acc.define_array(new Array(3000).fill(123.8));
 //var linear_t=util.linear_mul(t1,t2);
 //var pow_t=util.pow(t1,t2);
 //var exp_t=util.exp(t1);
-for (var i = 0; i < 200000; i++) {
+for (var i = 0; i < 20000; i++) {
   var add_t=util.add(t1,t2);
   var sub_t=util.sub(t1,t2);
   //acc.get_array(add_t);
@@ -43,7 +43,7 @@ var t2=acc.define_array(new Array(3000).fill(123.8));
 //var linear_t=util.linear_mul(t1,t2);
 //var pow_t=util.pow(t1,t2);
 //var exp_t=util.exp(t1);
-for (var i = 0; i < 200000; i++) {
+for (var i = 0; i < 20000; i++) {
   var add_t=util.add(t1,t2);
   var sub_t=util.sub(t1,t2);
   //acc.get_array(add_t);
@@ -62,14 +62,12 @@ console.log("\n ------------------------------------ \n");
 init_time=now();
 var A=  new Array(3000).fill(0.8);
 var B = new Array(3000).fill(123.8);
-for (var k = 0; k < 200000; k++) {
+var C = [];
+var D = [];
+for (var k = 0; k < 20000; k++) {
   for (var i = 0; i < A.length; i++) {
-    var C = [];
     C.push(A[i] + B[i]);
     C.toString();
-  }
-  for (var i = 0; i < A.length; i++) {
-    D = [];
     D.push(A[i] - B[i]);
     D.toString();
   }
