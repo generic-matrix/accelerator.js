@@ -18,8 +18,8 @@ var t2=acc.define_array([10,20,0.30,0.40]);
 for (var i = 0; i < 200000; i++) {
   var add_t=util.add(t1,t2);
   var sub_t=util.sub(t1,t2);
-  acc.get_array(add_t);
-  acc.get_array(sub_t);
+  //acc.get_array(add_t);
+  //acc.get_array(sub_t);
 }
 //console.log(acc.get_array(linear_t));
 //console.log(acc.get_array(pow_t));
@@ -46,8 +46,8 @@ var t2=acc.define_array([10,20,0.30,0.40]);
 for (var i = 0; i < 200000; i++) {
   var add_t=util.add(t1,t2);
   var sub_t=util.sub(t1,t2);
-  acc.get_array(add_t);
-  acc.get_array(sub_t);
+  //acc.get_array(add_t);
+  //acc.get_array(sub_t);
 }
 //console.log(acc.get_array(linear_t));
 //console.log(acc.get_array(pow_t));
