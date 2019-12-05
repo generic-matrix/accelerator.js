@@ -62,7 +62,7 @@ console.log("\n ------------------------------------ \n");
 init_time=now();
 var A=[10,20,0.30,0.40];
 var B = [10, 20, 0.30, 0.40];
-for (var i = 0; i < 20000; i++) {
+for (var k = 0; k < 20000; k++) {
   for (var i = 0; i < A.length; i++) {
     var C = [];
     C.push(A[i] + B[i]);
