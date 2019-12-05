@@ -15,7 +15,7 @@ var t2=acc.define_array([10,20,0.30,0.40]);
 //var linear_t=util.linear_mul(t1,t2);
 //var pow_t=util.pow(t1,t2);
 //var exp_t=util.exp(t1);
-for (var i = 0; i < 200000; i++) {
+for (var i = 0; i < 20000; i++) {
   var add_t=util.add(t1,t2);
   var sub_t=util.sub(t1,t2);
   acc.get_array(add_t);
@@ -43,7 +43,7 @@ var t2=acc.define_array([10,20,0.30,0.40]);
 //var linear_t=util.linear_mul(t1,t2);
 //var pow_t=util.pow(t1,t2);
 //var exp_t=util.exp(t1);
-for (var i = 0; i < 200000; i++) {
+for (var i = 0; i < 20000; i++) {
   var add_t=util.add(t1,t2);
   var sub_t=util.sub(t1,t2);
   acc.get_array(add_t);
@@ -62,7 +62,7 @@ console.log("\n ------------------------------------ \n");
 init_time=now();
 var A=[10,20,0.30,0.40];
 var B = [10, 20, 0.30, 0.40];
-for (var i = 0; i < 200000; i++) {
+for (var i = 0; i < 20000; i++) {
   for (var i = 0; i < A.length; i++) {
     var C = [];
     C.push(A[i] + B[i]);
@@ -76,4 +76,3 @@ for (var i = 0; i < 200000; i++) {
 }
 final_time=now();
 console.log("Time taken CPU : "+(final_time-init_time)/1000000000+" sec");
-
