@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "A mininal binding to bind generics.js with tensorflow to use GPU / CUDA.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/generic-matrix/accelerator.js.git"
+  },
   "scripts": {
     "test": "node test.js"
   },
   "files": [
     "src"
   ],
-  "keywords": [],
+  "keywords": [
+    "generics.js","TF","cuda","tensorflow"
+  ],
   "author": "kaustubh Bawankar <appdevcorp999@gmail.com>",
   "license": "MIT",
   "dependencies": {
