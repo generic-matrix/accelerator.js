@@ -1,4 +1,4 @@
-var Accelerator=require("/content/accelerator.js/index.js");
+var Accelerator=require("accelerator.js");
 const now = require('nano-time');
 
 var init_time=now();
