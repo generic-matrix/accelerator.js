@@ -14,6 +14,10 @@ class Util{
     linear_mul(vec1,vec2){
         return this.acc.define_array(vec1[vec1.var_name].mul(vec2[vec2.var_name]).arraySync());
     }
+    
+    linear_div(vec1,vec2){
+        return this.acc.define_array(vec1[vec1.var_name].div(vec2[vec2.var_name]).arraySync());
+    }
 
     pow(vec1,vec2){
         return this.acc.define_array(vec1[vec1.var_name].pow(vec2[vec2.var_name]).arraySync());
