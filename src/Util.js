@@ -20,11 +20,15 @@ class Util{
     }
     
     linear_max(vec1,vec2){
-        
+        if(vec1>vec2){
+            return vec1;
+        }else{
+            return vec2;
+        }    
     }
     
     linear_max_boolean(vec1,vec2){
-        
+        return vec1>vec2;
     }
 
     pow(vec1,vec2){
