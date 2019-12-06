@@ -15,11 +15,11 @@ var t2=acc.define_array(new Array(50).fill(123.8));
 //var linear_t=util.linear_mul(t1,t2);
 //var pow_t=util.pow(t1,t2);
 //var exp_t=util.exp(t1);
-for (var i = 0; i < 200; i++) {
+for (var i = 0; i < 500; i++) {
   var add_t=util.add(t1,t2);
   var sub_t=util.sub(t1,t2);
-  //acc.get_array(add_t);
-  //acc.get_array(sub_t);
+  acc.get_array(add_t);
+  acc.get_array(sub_t);
 }
 //console.log(acc.get_array(linear_t));
 //console.log(acc.get_array(pow_t));
@@ -43,11 +43,11 @@ var t2=acc.define_array(new Array(50).fill(123.8));
 //var linear_t=util.linear_mul(t1,t2);
 //var pow_t=util.pow(t1,t2);
 //var exp_t=util.exp(t1);
-for (var i = 0; i < 200; i++) {
+for (var i = 0; i < 500; i++) {
   var add_t=util.add(t1,t2);
   var sub_t=util.sub(t1,t2);
-  //acc.get_array(add_t);
-  //acc.get_array(sub_t);
+  acc.get_array(add_t);
+  acc.get_array(sub_t);
 }
 //console.log(acc.get_array(linear_t));
 //console.log(acc.get_array(pow_t));
@@ -64,7 +64,7 @@ var A=  new Array(50).fill(0.8);
 var B = new Array(50).fill(123.8);
 var C = [];
 var D = [];
-for (var k = 0; k < 200; k++) {
+for (var k = 0; k < 500; k++) {
   for (var i = 0; i < A.length; i++) {
     C.push(A[i] + B[i]);
     C.toString();
