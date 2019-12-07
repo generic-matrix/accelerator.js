@@ -50,6 +50,13 @@ class Accelerator{
     get_array(elem){
         return elem[elem.var_name].arraySync();
     }
+
+    /*
+        Returns A tensordata object.
+     */
+    get_tensors(tensor){
+        return tf.split(tensor,tensor.size);
+    }
 }
 
 module.exports=Accelerator;
