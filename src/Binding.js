@@ -4,15 +4,14 @@ class Binding{
     constructor(arr,json) {
 
         var date=new Date();
-        this.var_name="t"+now();
         if(json=="copy"){
-            this[this.var_name] = arr;
+            this.obj = arr;
         }else {
             if (json["use_lib"] === "tf") {
-                this[this.var_name] = tf.tensor(arr);
+                this.obj = tf.tensor(arr);
             } else if (json["use_lib"] === "tf-cuda") {
                 var tf_cuda = require("@tensorflow/tfjs-node-gpu");
-                this[this.var_name] = tf_cuda.tensor(arr);
+                this.obj = tf_cuda.tensor(arr);
             } else {
                 throw new Error("the use_lib setting is invalid");
             }
