@@ -48,14 +48,22 @@ class Accelerator{
     }
 
     get_array(elem){
-        return elem[elem.var_name].arraySync();
+        return elem.obj.arraySync();
     }
+
 
     /*
         Returns A tensordata object.
      */
     get_tensors(tensor){
-        return tf.split(tensor,tensor.size);
+        var bind=[];
+        var t=binder_object[binder_object.var_name];
+        var settings=this.settings;
+        var tensors=tf.split(t,t.size);
+        for(var i=0;i<tensors.length;i++){
+            bind.push(this.copy_obj(tensors[i]));
+        }
+        return bind;
     }
 }
 
