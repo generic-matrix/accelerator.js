@@ -4,23 +4,27 @@ class Util{
         this.acc=new Accelerator(json);
     }
     add(vec1,vec2){
-        return this.acc.copy_obj(vec1[vec1.var_name].add(vec2[vec2.var_name]));
+        return this.acc.copy_obj(vec1.obj.add(vec2.obj));
     }
 
     sub(vec1,vec2){
-        return this.acc.copy_obj(vec1[vec1.var_name].sub(vec2[vec2.var_name]));
+        return this.acc.copy_obj(vec1.obj.sub(vec2.obj));
     }
 
     linear_mul(vec1,vec2){
-        return this.acc.copy_obj(vec1[vec1.var_name].mul(vec2[vec2.var_name]));
+        return this.acc.copy_obj(vec1.obj.mul(vec2.obj));
     }
 
     linear_div(vec1,vec2){
-        return this.acc.copy_obj(vec1[vec1.var_name].div(vec2[vec2.var_name]));
+        return this.acc.copy_obj(vec1.obj.div(vec2.obj));
+    }
+
+    transpose(vec){
+        return this.acc.copy_obj(vec.obj.transpose());
     }
 
     linear_max(vec1,vec2){
-        if(vec1>vec2){
+        if(vec1.obj>vec2.obj){
             return vec1;
         }else{
             return vec2;
@@ -28,17 +32,20 @@ class Util{
     }
 
     linear_max_boolean(vec1,vec2){
-        return vec1>vec2;
+        return vec1.obj>vec2.obj;
     }
 
     pow(vec1,vec2){
-        return this.acc.copy_obj(vec1[vec1.var_name].pow(vec2[vec2.var_name]));
+        return this.acc.copy_obj(vec1.obj.pow(vec2.obj));
     }
 
     exp(vec1){
-        return this.acc.copy_obj(vec1[vec1.var_name].exp());
+        return this.acc.copy_obj(vec1.obj.exp());
     }
 
+    abs(vec1){
+        return this.acc.copy_obj(vec1.obj.abs());
+    }
 }
 
 module.exports=Util;
